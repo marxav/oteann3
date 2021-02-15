@@ -35,7 +35,9 @@ OTEANN achieves the following performance:
 
 ### 
 
+|-----------|------------|------------|
 |orthography| write score| read score |
+|-----------|------------|------------|
 |    ent    | 98.6 ± 1.2 | 99.4 ± 0.3 |
 |    eno    | 00.0 ± 0.0 | 00.0 ± 0.0 |
 |    ar     | 79.4 ± 1.3 | 98.0 ± 0.4 |
@@ -55,6 +57,7 @@ OTEANN achieves the following performance:
 |    sh     | 98.0 ± 0.6 | 44.8 ± 2.6 |
 |    tr     | 93.8 ± 0.7 | 88.1 ± 2.9 |
 |    zh     | 05.4 ± 1.0 | 52.5 ± 1.6 |
+|-----------|------------|------------|
 
 ## License
 
