@@ -5,12 +5,12 @@ import requests
 
 CONFIG = {
     'subdatasets_dir': 'subdatasets',
-    'input_file': 'subdatasets.tar.gz',
+    'input_file': 'dataset.tar.gz',
     'subdataset': 'wikt_samples.csv',
     'root_dir': '.',
     'languages': ['ent', 'eno', 'ar', 'br', 'de', 
                   'en', 'eo', 'es', 'fi', 'fr', 
-                  'fro', 'it', 'ko', 'nl', 'pt2', 
+                  'fro', 'it', 'ko', 'nl', 'pt', 
                   'ru', 'sh', 'tr', 'zh']
 }
 
@@ -21,9 +21,10 @@ def extract_files(config):
     dest_dir = config['root_dir'] + '/' + config['subdatasets_dir']
     if not os.path.exists(dest_dir):
         os.makedirs(dest_dir)
-    os.chdir(dest_dir)
     try:
-        filename = '../' + config['input_file']
+        print(os.listdir())
+        print('"""""""""""""""""""""') 
+        filename = config['input_file']
         file = tarfile.open(filename, 'r:gz')
         try: file.extractall()
         finally: file.close()
